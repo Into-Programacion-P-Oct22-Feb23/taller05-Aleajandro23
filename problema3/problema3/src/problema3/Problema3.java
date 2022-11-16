@@ -36,33 +36,39 @@ public class Problema3 {
         System.out.println("Ingrese el costo del vehiculo");
 
         costo = entrada.nextDouble();
-
-        if (origen.equals("Alemania")) {
-            double descuento = 1.20;
-            valor_total = costo * descuento;
-            System.out.printf("El descuento es de: \n20\n El valor del"
-                    + "vehiculo es de: \n%2f\n", valor_total);
-        } else {
-            if (origen.equals("Japon"));
-                double descuento = 1.30;
-                valor_total = costo * descuento;
-                System.out.printf("El descuento es de: \n30%\n El valor del"
-                    + "vehiculo es de: \n%2f\n", valor_total);
+        
+        if(origen.equals  ("Alemania")){
+            impuesto = costo * 0.20;
+            valor_total = costo + impuesto;
+            System.out.printf("El impuesto es de: \n%f\nEl valor del"
+                    + "vehiculo es de: \n%2f\n", impuesto, valor_total);        
+            }else{ 
+           if(origen.equals("Japon")){
+            impuesto = costo * 0.30; 
+            valor_total = costo + impuesto;
+             System.out.printf("El impuesto es de: \n%f\nEl valor del"
+                    + "vehiculo es de: \n%2f\n", impuesto, valor_total);       
             }
-                if (origen.equals("Italia")){
-                    double descuento = 1.15;
-                    valor_total = costo * descuento;
-                    System.out.printf("El descuento es de: \n15%\n El valor del"
-                    + "vehiculo es de: \n%2f\n", valor_total);    
-                    }else{
-                     double descuento = 1.08;
-                    valor_total = costo * descuento;
-                    System.out.printf("El descuento es de: \n8%\n El valor del"
-                    + "vehiculo es de: \n%2f\n", valor_total); 
-                    }
-                
-         
+            if(origen.equals("Italia")){
+            impuesto = costo * 0.15; 
+            valor_total = costo + impuesto;
+             System.out.printf("El impuesto es de: \n%f\nEl valor del"
+                    + "vehiculo es de: \n%2f\n", impuesto, valor_total);       
+            }else{
+            if(origen.equals("USA")){
+            impuesto = costo * 0.08;
+            valor_total = costo + impuesto;
+             System.out.printf("El impuesto es de: \n%f\nEl valor del"
+                    + "vehiculo es de: \n%2f\n", impuesto, valor_total);       
+            }
+           }
+            
+        }
+          
+        }}
+        
+        
+        
+       
 
-    }
 
-}

@@ -35,18 +35,31 @@ public class Problema4 {
        if ((dias > 5) && (dias <= 10)) {
            descuento = (subtotal * 10) /100;
            total = subtotal - descuento;
+           System.out.printf("El descuento es: %f\nEL subtotal es:%.2f\n"
+                   + "El valor a "
+                   + "cancelar es: %f\n", descuento ,subtotal
+                   , total);
           }else{
-            if ((dias > 10) && (dias <= 15)) {
+           System.out.printf("El valor a cancelar es: %.2f\n", subtotal);
+       }
+        if ((dias > 10) && (dias <= 15)) {
                 descuento = (subtotal * 15) /100;
                 total = subtotal - descuento;
-             }else{
+                 System.out.printf("El descuento es: %f\nEL subtotal es:%.2f\n"
+                   + "El valor a "
+                   + "cancelar es: %f\n", descuento ,subtotal
+                   , total);
+             }
                  if ((dias > 10) && (dias <= 15)) {
                     descuento = (subtotal * 15) /100;
                     total = subtotal - descuento;
+                   System.out.printf("El descuento es: %f\nEL subtotal es:%.2f\n"
+                   + "El valor a "
+                   + "cancelar es: %f\n", descuento ,subtotal
+                   , total);
            }
-           }
+              
            
-       }
             if (dias < 5){
             total = subtotal;
             }
